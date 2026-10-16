@@ -25,7 +25,15 @@ A taxa de R$10 é somada à base, como pede o enunciado. A exceção usa **super
 
 ## Test doubles
 
-`object()` é o Dummy de sessão, sem uso na lógica. `ServicoLogisticaAPI` é substituído por Stub com retorno fixo de R$23,50. O Mock de `ServicoNotificacao` verifica uma única chamada com o ID correto. O registro de eventos confirma consulta antes da notificação; outro teste garante ausência de notificação se a consulta falhar. As interfaces são injetadas, sem adaptador de rede real.
+Os três papéis estão definidos e identificados no próprio [arquivo de testes](tests/test_logistica_doubles.py):
+
+| Papel | Implementação | Como aparece no teste |
+|---|---|---|
+| **Dummy** | Classe `SessaoDummy`, sem dados ou comportamento | `sessao_dummy = SessaoDummy()` preenche `usuario_sessao`; não participa do cálculo. |
+| **Stub** | Classe `ServicoLogisticaStub` | `consultar_taxa()` retorna sempre **23.50**, substituindo a API sem rede. |
+| **Mock** | `notificacao_mock`, criado com a interface `ServicoNotificacao` | `assert_called_once_with("PED-008")` verifica uma única chamada com o ID correto. |
+
+O teste segue Arrange, Act e Assert, executa a função real `confirmar_frete` e verifica a taxa e a notificação. A lista de eventos comprova que a consulta termina antes da notificação. Um segundo cenário usa `ServicoLogisticaComFalhaStub` e verifica que não há notificação quando a consulta falha.
 
 ## TDD executado
 

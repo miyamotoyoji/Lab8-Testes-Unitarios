@@ -1,0 +1,55 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.5, pytest-9.1.1, pluggy-1.7.0 -- C:\Users\USUARIO\PycharmProjects\PythonProject\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\USUARIO\Documents\Codex\2026-10-11\fa-a\outputs\Lab8_Testes_Unitarios
+configfile: pyproject.toml
+testpaths: tests
+collecting ... collected 45 items
+
+tests/test_frete.py::test_req01_frete_padrao_abaixo_limite[0] PASSED     [  2%]
+tests/test_frete.py::test_req01_frete_padrao_abaixo_limite[50] PASSED    [  4%]
+tests/test_frete.py::test_req01_frete_padrao_abaixo_limite[150] PASSED   [  6%]
+tests/test_frete.py::test_req01_frete_padrao_abaixo_limite[199.99] PASSED [  8%]
+tests/test_frete.py::test_req01_frete_padrao_abaixo_limite[200] PASSED   [ 11%]
+tests/test_frete.py::test_req01_frete_padrao_abaixo_limite[249.99] PASSED [ 13%]
+tests/test_frete.py::test_req02_frete_gratis_a_partir_limite[250] PASSED [ 15%]
+tests/test_frete.py::test_req02_frete_gratis_a_partir_limite[250.01] PASSED [ 17%]
+tests/test_frete.py::test_req02_frete_gratis_a_partir_limite[300] PASSED [ 20%]
+tests/test_frete.py::test_req01_req02_total_do_pedido[0-15] PASSED       [ 22%]
+tests/test_frete.py::test_req01_req02_total_do_pedido[150-165] PASSED    [ 24%]
+tests/test_frete.py::test_req01_req02_total_do_pedido[199.99-214.99] PASSED [ 26%]
+tests/test_frete.py::test_req01_req02_total_do_pedido[200-215] PASSED    [ 28%]
+tests/test_frete.py::test_req01_req02_total_do_pedido[249.99-264.99] PASSED [ 31%]
+tests/test_frete.py::test_req01_req02_total_do_pedido[250-250] PASSED    [ 33%]
+tests/test_frete.py::test_req01_req02_total_do_pedido[300-300] PASSED    [ 35%]
+tests/test_frete_aaa.py::test_frete_padrao_e_gratuidade_aaa[150-15] PASSED [ 37%]
+tests/test_frete_aaa.py::test_frete_padrao_e_gratuidade_aaa[249.99-15] PASSED [ 40%]
+tests/test_frete_aaa.py::test_frete_padrao_e_gratuidade_aaa[250-0] PASSED [ 42%]
+tests/test_frete_aaa.py::test_frete_padrao_e_gratuidade_aaa[300-0] PASSED [ 44%]
+tests/test_frete_regional_tdd.py::test_adicional_regional_e_excecao[150-25-Norte] PASSED [ 46%]
+tests/test_frete_regional_tdd.py::test_adicional_regional_e_excecao[150-25-Nordeste] PASSED [ 48%]
+tests/test_frete_regional_tdd.py::test_adicional_regional_e_excecao[249.99-25-Norte] PASSED [ 51%]
+tests/test_frete_regional_tdd.py::test_adicional_regional_e_excecao[249.99-25-Nordeste] PASSED [ 53%]
+tests/test_frete_regional_tdd.py::test_adicional_regional_e_excecao[250-10-Norte] PASSED [ 55%]
+tests/test_frete_regional_tdd.py::test_adicional_regional_e_excecao[250-10-Nordeste] PASSED [ 57%]
+tests/test_frete_regional_tdd.py::test_adicional_regional_e_excecao[300-10-Norte] PASSED [ 60%]
+tests/test_frete_regional_tdd.py::test_adicional_regional_e_excecao[300-10-Nordeste] PASSED [ 62%]
+tests/test_frete_regional_tdd.py::test_adicional_regional_e_excecao[300.01-0-Norte] PASSED [ 64%]
+tests/test_frete_regional_tdd.py::test_adicional_regional_e_excecao[300.01-0-Nordeste] PASSED [ 66%]
+tests/test_frete_regional_tdd.py::test_outras_regioes_preservam_regra_base[249.99-15-Sul] PASSED [ 68%]
+tests/test_frete_regional_tdd.py::test_outras_regioes_preservam_regra_base[249.99-15-Sudeste] PASSED [ 71%]
+tests/test_frete_regional_tdd.py::test_outras_regioes_preservam_regra_base[249.99-15-Centro-Oeste] PASSED [ 73%]
+tests/test_frete_regional_tdd.py::test_outras_regioes_preservam_regra_base[250-0-Sul] PASSED [ 75%]
+tests/test_frete_regional_tdd.py::test_outras_regioes_preservam_regra_base[250-0-Sudeste] PASSED [ 77%]
+tests/test_frete_regional_tdd.py::test_outras_regioes_preservam_regra_base[250-0-Centro-Oeste] PASSED [ 80%]
+tests/test_frete_regional_tdd.py::test_outras_regioes_preservam_regra_base[300-0-Sul] PASSED [ 82%]
+tests/test_frete_regional_tdd.py::test_outras_regioes_preservam_regra_base[300-0-Sudeste] PASSED [ 84%]
+tests/test_frete_regional_tdd.py::test_outras_regioes_preservam_regra_base[300-0-Centro-Oeste] PASSED [ 86%]
+tests/test_frete_regional_tdd.py::test_total_inclui_frete_regional[150-175] PASSED [ 88%]
+tests/test_frete_regional_tdd.py::test_total_inclui_frete_regional[250-260] PASSED [ 91%]
+tests/test_frete_regional_tdd.py::test_total_inclui_frete_regional[300-310] PASSED [ 93%]
+tests/test_frete_regional_tdd.py::test_total_inclui_frete_regional[300.01-300.01] PASSED [ 95%]
+tests/test_logistica_doubles.py::test_confirmacao_com_dummy_stub_e_mock PASSED [ 97%]
+tests/test_logistica_doubles.py::test_nao_notifica_quando_consulta_falha PASSED [100%]
+
+============================= 45 passed in 0.20s ==============================
