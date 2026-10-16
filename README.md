@@ -25,15 +25,15 @@ A taxa de R$10 é somada à base, como pede o enunciado. A exceção usa **super
 
 ## Test doubles
 
-Os três papéis estão definidos e identificados no próprio [arquivo de testes](tests/test_logistica_doubles.py):
+Os objetos são criados com `unittest.mock.Mock`, conforme o formato solicitado:
 
-| Papel | Implementação | Como aparece no teste |
+| Papel | Criação | Uso |
 |---|---|---|
-| **Dummy** | Classe `SessaoDummy`, sem dados ou comportamento | `sessao_dummy = SessaoDummy()` preenche `usuario_sessao`; não participa do cálculo. |
-| **Stub** | Classe `ServicoLogisticaStub` | `consultar_taxa()` retorna sempre **23.50**, substituindo a API sem rede. |
-| **Mock** | `notificacao_mock`, criado com a interface `ServicoNotificacao` | `assert_called_once_with("PED-008")` verifica uma única chamada com o ID correto. |
+| Dummy | `dummy_user = Mock()` | Preenche a sessão; não recebe chamadas durante a execução. |
+| Stub | `stub = Mock()` | `stub.consultar_taxa.return_value = 23.50` programa a resposta da logística. |
+| Mock | `notificacao_mock = Mock(spec=ServicoNotificacao)` | Verifica uma única notificação com o ID correto usando `assert_called_once_with`. |
 
-O teste segue Arrange, Act e Assert, executa a função real `confirmar_frete` e verifica a taxa e a notificação. A lista de eventos comprova que a consulta termina antes da notificação. Um segundo cenário usa `ServicoLogisticaComFalhaStub` e verifica que não há notificação quando a consulta falha.
+A classe Python utilizada é `Mock` nos três casos; Dummy, Stub e Mock descrevem os papéis desempenhados no teste. O objeto `chamadas` reúne o histórico para verificar a consulta antes da notificação. No cenário de falha, `side_effect` simula indisponibilidade e `assert_not_called` garante que não há notificação. Não há acesso real à rede.
 
 ## TDD executado
 
