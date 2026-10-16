@@ -11,7 +11,7 @@ Implementação dos quatro exercícios da seção **8. Testes Unitários**. Os s
 
 ## Resultados
 
-**45 testes aprovados**: 16 da aula anterior, 4 AAA, 2 de serviços isolados e 23 da nova regra regional. Nenhuma chamada real de rede é executada nos testes.
+**45 testes aprovados**: 16 da aula anterior, 4 AAA, 2 de serviços isolados e 23 da nova regra regional. Nenhuma chamada real de rede é executada nos testes. Também foi executada no PyCharm a suíte bancária do laboratório 7: 21 métodos coletados; a interface contabiliza 35 resultados incluindo subtestes, todos aprovados, com saída 0.
 
 ## Regra de frete
 
