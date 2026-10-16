@@ -1,5 +1,5 @@
 [project]
-name = "lab6-sdd-frete"
+name = "lab8-testes-unitarios"
 version = "1.0.0"
 requires-python = ">=3.14"
 dependencies = []

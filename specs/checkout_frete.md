@@ -15,4 +15,11 @@ Entradas: subtotal numérico não negativo, finito, em reais, com até duas casa
 
 `calcular_frete(subtotal)` devolve 15.00 ou 0.00; `calcular_total(subtotal)` devolve subtotal + frete. O carrinho de valor zero pertence ao domínio e tem frete padrão. Testes usam comparação aproximada para números decimais em ponto flutuante.
 
-Sem cupons, regiões, interface, banco de dados ou rede. Os trechos ilustrativos dos slides com tarifa de R$20, regiões e outros identificadores não são adotados: conflitam com REQ-01 e extrapolam a tarefa delimitada. Prevalecem as regras explícitas do exercício 1.
+Sem cupons, interface ou banco de dados. A evolução regional abaixo é autorizada pelo laboratório 8; os exemplos regionais divergentes do laboratório 6 não são usados.
+
+## Evolução do laboratório 8
+
+- **REQ-03:** Se a região for "Norte" ou "Nordeste" e o subtotal for menor ou igual a R$300,00, então o sistema deve acrescentar R$10,00 ao frete base de REQ-01/REQ-02. Se o subtotal for superior a R$300,00, então o frete deve permanecer grátis.
+- **REQ-04:** Quando confirmar um frete, o sistema deve consultar a taxa no ServicoLogisticaAPI e, após a consulta bem-sucedida, chamar enviar_notificacao_rastreio exatamente uma vez com o ID do pedido no ServicoNotificacao. Se a consulta falhar, não deve notificar. A sessão recebida é reservada, sem uso na lógica atual.
+
+Interpretação literal de "sobre a taxa base": Norte/Nordeste pagam 25 abaixo de 250, 10 de 250 até 300 inclusive e zero acima de 300. Outras regiões preservam a regra base. A região é opcional para compatibilidade com a aula anterior e usa os nomes exatos do enunciado. O total também recebe a região. O fluxo externo é uma unidade separada com dependências injetadas; os testes não fazem chamadas reais.
