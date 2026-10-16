@@ -1,0 +1,368 @@
+FFFFFFFFFFFFFFFFFFFFFFF                                                  [100%]
+================================== FAILURES ===================================
+_______________ test_adicional_regional_e_excecao[150-25-Norte] _______________
+
+subtotal = 150, esperado = 25, regiao = 'Norte'
+
+    @pytest.mark.parametrize("regiao", ["Norte", "Nordeste"])
+    @pytest.mark.parametrize("subtotal,esperado", [(150, 25), (249.99, 25), (250, 10), (300, 10), (300.01, 0)])
+    def test_adicional_regional_e_excecao(subtotal, esperado, regiao):
+        # Arrange
+        valor_carrinho, destino = subtotal, regiao
+        # Act
+>       resultado = calcular_frete(valor_carrinho, destino)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: calcular_frete() takes 1 positional argument but 2 were given
+
+tests\test_frete_regional_tdd.py:13: TypeError
+_____________ test_adicional_regional_e_excecao[150-25-Nordeste] ______________
+
+subtotal = 150, esperado = 25, regiao = 'Nordeste'
+
+    @pytest.mark.parametrize("regiao", ["Norte", "Nordeste"])
+    @pytest.mark.parametrize("subtotal,esperado", [(150, 25), (249.99, 25), (250, 10), (300, 10), (300.01, 0)])
+    def test_adicional_regional_e_excecao(subtotal, esperado, regiao):
+        # Arrange
+        valor_carrinho, destino = subtotal, regiao
+        # Act
+>       resultado = calcular_frete(valor_carrinho, destino)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: calcular_frete() takes 1 positional argument but 2 were given
+
+tests\test_frete_regional_tdd.py:13: TypeError
+_____________ test_adicional_regional_e_excecao[249.99-25-Norte] ______________
+
+subtotal = 249.99, esperado = 25, regiao = 'Norte'
+
+    @pytest.mark.parametrize("regiao", ["Norte", "Nordeste"])
+    @pytest.mark.parametrize("subtotal,esperado", [(150, 25), (249.99, 25), (250, 10), (300, 10), (300.01, 0)])
+    def test_adicional_regional_e_excecao(subtotal, esperado, regiao):
+        # Arrange
+        valor_carrinho, destino = subtotal, regiao
+        # Act
+>       resultado = calcular_frete(valor_carrinho, destino)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: calcular_frete() takes 1 positional argument but 2 were given
+
+tests\test_frete_regional_tdd.py:13: TypeError
+____________ test_adicional_regional_e_excecao[249.99-25-Nordeste] ____________
+
+subtotal = 249.99, esperado = 25, regiao = 'Nordeste'
+
+    @pytest.mark.parametrize("regiao", ["Norte", "Nordeste"])
+    @pytest.mark.parametrize("subtotal,esperado", [(150, 25), (249.99, 25), (250, 10), (300, 10), (300.01, 0)])
+    def test_adicional_regional_e_excecao(subtotal, esperado, regiao):
+        # Arrange
+        valor_carrinho, destino = subtotal, regiao
+        # Act
+>       resultado = calcular_frete(valor_carrinho, destino)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: calcular_frete() takes 1 positional argument but 2 were given
+
+tests\test_frete_regional_tdd.py:13: TypeError
+_______________ test_adicional_regional_e_excecao[250-10-Norte] _______________
+
+subtotal = 250, esperado = 10, regiao = 'Norte'
+
+    @pytest.mark.parametrize("regiao", ["Norte", "Nordeste"])
+    @pytest.mark.parametrize("subtotal,esperado", [(150, 25), (249.99, 25), (250, 10), (300, 10), (300.01, 0)])
+    def test_adicional_regional_e_excecao(subtotal, esperado, regiao):
+        # Arrange
+        valor_carrinho, destino = subtotal, regiao
+        # Act
+>       resultado = calcular_frete(valor_carrinho, destino)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: calcular_frete() takes 1 positional argument but 2 were given
+
+tests\test_frete_regional_tdd.py:13: TypeError
+_____________ test_adicional_regional_e_excecao[250-10-Nordeste] ______________
+
+subtotal = 250, esperado = 10, regiao = 'Nordeste'
+
+    @pytest.mark.parametrize("regiao", ["Norte", "Nordeste"])
+    @pytest.mark.parametrize("subtotal,esperado", [(150, 25), (249.99, 25), (250, 10), (300, 10), (300.01, 0)])
+    def test_adicional_regional_e_excecao(subtotal, esperado, regiao):
+        # Arrange
+        valor_carrinho, destino = subtotal, regiao
+        # Act
+>       resultado = calcular_frete(valor_carrinho, destino)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: calcular_frete() takes 1 positional argument but 2 were given
+
+tests\test_frete_regional_tdd.py:13: TypeError
+_______________ test_adicional_regional_e_excecao[300-10-Norte] _______________
+
+subtotal = 300, esperado = 10, regiao = 'Norte'
+
+    @pytest.mark.parametrize("regiao", ["Norte", "Nordeste"])
+    @pytest.mark.parametrize("subtotal,esperado", [(150, 25), (249.99, 25), (250, 10), (300, 10), (300.01, 0)])
+    def test_adicional_regional_e_excecao(subtotal, esperado, regiao):
+        # Arrange
+        valor_carrinho, destino = subtotal, regiao
+        # Act
+>       resultado = calcular_frete(valor_carrinho, destino)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: calcular_frete() takes 1 positional argument but 2 were given
+
+tests\test_frete_regional_tdd.py:13: TypeError
+_____________ test_adicional_regional_e_excecao[300-10-Nordeste] ______________
+
+subtotal = 300, esperado = 10, regiao = 'Nordeste'
+
+    @pytest.mark.parametrize("regiao", ["Norte", "Nordeste"])
+    @pytest.mark.parametrize("subtotal,esperado", [(150, 25), (249.99, 25), (250, 10), (300, 10), (300.01, 0)])
+    def test_adicional_regional_e_excecao(subtotal, esperado, regiao):
+        # Arrange
+        valor_carrinho, destino = subtotal, regiao
+        # Act
+>       resultado = calcular_frete(valor_carrinho, destino)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: calcular_frete() takes 1 positional argument but 2 were given
+
+tests\test_frete_regional_tdd.py:13: TypeError
+______________ test_adicional_regional_e_excecao[300.01-0-Norte] ______________
+
+subtotal = 300.01, esperado = 0, regiao = 'Norte'
+
+    @pytest.mark.parametrize("regiao", ["Norte", "Nordeste"])
+    @pytest.mark.parametrize("subtotal,esperado", [(150, 25), (249.99, 25), (250, 10), (300, 10), (300.01, 0)])
+    def test_adicional_regional_e_excecao(subtotal, esperado, regiao):
+        # Arrange
+        valor_carrinho, destino = subtotal, regiao
+        # Act
+>       resultado = calcular_frete(valor_carrinho, destino)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: calcular_frete() takes 1 positional argument but 2 were given
+
+tests\test_frete_regional_tdd.py:13: TypeError
+____________ test_adicional_regional_e_excecao[300.01-0-Nordeste] _____________
+
+subtotal = 300.01, esperado = 0, regiao = 'Nordeste'
+
+    @pytest.mark.parametrize("regiao", ["Norte", "Nordeste"])
+    @pytest.mark.parametrize("subtotal,esperado", [(150, 25), (249.99, 25), (250, 10), (300, 10), (300.01, 0)])
+    def test_adicional_regional_e_excecao(subtotal, esperado, regiao):
+        # Arrange
+        valor_carrinho, destino = subtotal, regiao
+        # Act
+>       resultado = calcular_frete(valor_carrinho, destino)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: calcular_frete() takes 1 positional argument but 2 were given
+
+tests\test_frete_regional_tdd.py:13: TypeError
+___________ test_outras_regioes_preservam_regra_base[249.99-15-Sul] ___________
+
+subtotal = 249.99, esperado = 15, regiao = 'Sul'
+
+    @pytest.mark.parametrize("regiao", ["Sul", "Sudeste", "Centro-Oeste"])
+    @pytest.mark.parametrize("subtotal,esperado", [(249.99, 15), (250, 0), (300, 0)])
+    def test_outras_regioes_preservam_regra_base(subtotal, esperado, regiao):
+        # Arrange
+        valor_carrinho, destino = subtotal, regiao
+        # Act
+>       resultado = calcular_frete(valor_carrinho, destino)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: calcular_frete() takes 1 positional argument but 2 were given
+
+tests\test_frete_regional_tdd.py:24: TypeError
+_________ test_outras_regioes_preservam_regra_base[249.99-15-Sudeste] _________
+
+subtotal = 249.99, esperado = 15, regiao = 'Sudeste'
+
+    @pytest.mark.parametrize("regiao", ["Sul", "Sudeste", "Centro-Oeste"])
+    @pytest.mark.parametrize("subtotal,esperado", [(249.99, 15), (250, 0), (300, 0)])
+    def test_outras_regioes_preservam_regra_base(subtotal, esperado, regiao):
+        # Arrange
+        valor_carrinho, destino = subtotal, regiao
+        # Act
+>       resultado = calcular_frete(valor_carrinho, destino)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: calcular_frete() takes 1 positional argument but 2 were given
+
+tests\test_frete_regional_tdd.py:24: TypeError
+______ test_outras_regioes_preservam_regra_base[249.99-15-Centro-Oeste] _______
+
+subtotal = 249.99, esperado = 15, regiao = 'Centro-Oeste'
+
+    @pytest.mark.parametrize("regiao", ["Sul", "Sudeste", "Centro-Oeste"])
+    @pytest.mark.parametrize("subtotal,esperado", [(249.99, 15), (250, 0), (300, 0)])
+    def test_outras_regioes_preservam_regra_base(subtotal, esperado, regiao):
+        # Arrange
+        valor_carrinho, destino = subtotal, regiao
+        # Act
+>       resultado = calcular_frete(valor_carrinho, destino)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: calcular_frete() takes 1 positional argument but 2 were given
+
+tests\test_frete_regional_tdd.py:24: TypeError
+_____________ test_outras_regioes_preservam_regra_base[250-0-Sul] _____________
+
+subtotal = 250, esperado = 0, regiao = 'Sul'
+
+    @pytest.mark.parametrize("regiao", ["Sul", "Sudeste", "Centro-Oeste"])
+    @pytest.mark.parametrize("subtotal,esperado", [(249.99, 15), (250, 0), (300, 0)])
+    def test_outras_regioes_preservam_regra_base(subtotal, esperado, regiao):
+        # Arrange
+        valor_carrinho, destino = subtotal, regiao
+        # Act
+>       resultado = calcular_frete(valor_carrinho, destino)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: calcular_frete() takes 1 positional argument but 2 were given
+
+tests\test_frete_regional_tdd.py:24: TypeError
+___________ test_outras_regioes_preservam_regra_base[250-0-Sudeste] ___________
+
+subtotal = 250, esperado = 0, regiao = 'Sudeste'
+
+    @pytest.mark.parametrize("regiao", ["Sul", "Sudeste", "Centro-Oeste"])
+    @pytest.mark.parametrize("subtotal,esperado", [(249.99, 15), (250, 0), (300, 0)])
+    def test_outras_regioes_preservam_regra_base(subtotal, esperado, regiao):
+        # Arrange
+        valor_carrinho, destino = subtotal, regiao
+        # Act
+>       resultado = calcular_frete(valor_carrinho, destino)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: calcular_frete() takes 1 positional argument but 2 were given
+
+tests\test_frete_regional_tdd.py:24: TypeError
+________ test_outras_regioes_preservam_regra_base[250-0-Centro-Oeste] _________
+
+subtotal = 250, esperado = 0, regiao = 'Centro-Oeste'
+
+    @pytest.mark.parametrize("regiao", ["Sul", "Sudeste", "Centro-Oeste"])
+    @pytest.mark.parametrize("subtotal,esperado", [(249.99, 15), (250, 0), (300, 0)])
+    def test_outras_regioes_preservam_regra_base(subtotal, esperado, regiao):
+        # Arrange
+        valor_carrinho, destino = subtotal, regiao
+        # Act
+>       resultado = calcular_frete(valor_carrinho, destino)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: calcular_frete() takes 1 positional argument but 2 were given
+
+tests\test_frete_regional_tdd.py:24: TypeError
+_____________ test_outras_regioes_preservam_regra_base[300-0-Sul] _____________
+
+subtotal = 300, esperado = 0, regiao = 'Sul'
+
+    @pytest.mark.parametrize("regiao", ["Sul", "Sudeste", "Centro-Oeste"])
+    @pytest.mark.parametrize("subtotal,esperado", [(249.99, 15), (250, 0), (300, 0)])
+    def test_outras_regioes_preservam_regra_base(subtotal, esperado, regiao):
+        # Arrange
+        valor_carrinho, destino = subtotal, regiao
+        # Act
+>       resultado = calcular_frete(valor_carrinho, destino)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: calcular_frete() takes 1 positional argument but 2 were given
+
+tests\test_frete_regional_tdd.py:24: TypeError
+___________ test_outras_regioes_preservam_regra_base[300-0-Sudeste] ___________
+
+subtotal = 300, esperado = 0, regiao = 'Sudeste'
+
+    @pytest.mark.parametrize("regiao", ["Sul", "Sudeste", "Centro-Oeste"])
+    @pytest.mark.parametrize("subtotal,esperado", [(249.99, 15), (250, 0), (300, 0)])
+    def test_outras_regioes_preservam_regra_base(subtotal, esperado, regiao):
+        # Arrange
+        valor_carrinho, destino = subtotal, regiao
+        # Act
+>       resultado = calcular_frete(valor_carrinho, destino)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: calcular_frete() takes 1 positional argument but 2 were given
+
+tests\test_frete_regional_tdd.py:24: TypeError
+________ test_outras_regioes_preservam_regra_base[300-0-Centro-Oeste] _________
+
+subtotal = 300, esperado = 0, regiao = 'Centro-Oeste'
+
+    @pytest.mark.parametrize("regiao", ["Sul", "Sudeste", "Centro-Oeste"])
+    @pytest.mark.parametrize("subtotal,esperado", [(249.99, 15), (250, 0), (300, 0)])
+    def test_outras_regioes_preservam_regra_base(subtotal, esperado, regiao):
+        # Arrange
+        valor_carrinho, destino = subtotal, regiao
+        # Act
+>       resultado = calcular_frete(valor_carrinho, destino)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: calcular_frete() takes 1 positional argument but 2 were given
+
+tests\test_frete_regional_tdd.py:24: TypeError
+__________________ test_total_inclui_frete_regional[150-175] __________________
+
+subtotal = 150, esperado = 175
+
+    @pytest.mark.parametrize("subtotal,esperado", [(150, 175), (250, 260), (300, 310), (300.01, 300.01)])
+    def test_total_inclui_frete_regional(subtotal, esperado):
+        # Arrange
+        destino = "Norte"
+        # Act
+>       resultado = calcular_total(subtotal, destino)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: calcular_total() takes 1 positional argument but 2 were given
+
+tests\test_frete_regional_tdd.py:34: TypeError
+__________________ test_total_inclui_frete_regional[250-260] __________________
+
+subtotal = 250, esperado = 260
+
+    @pytest.mark.parametrize("subtotal,esperado", [(150, 175), (250, 260), (300, 310), (300.01, 300.01)])
+    def test_total_inclui_frete_regional(subtotal, esperado):
+        # Arrange
+        destino = "Norte"
+        # Act
+>       resultado = calcular_total(subtotal, destino)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: calcular_total() takes 1 positional argument but 2 were given
+
+tests\test_frete_regional_tdd.py:34: TypeError
+__________________ test_total_inclui_frete_regional[300-310] __________________
+
+subtotal = 300, esperado = 310
+
+    @pytest.mark.parametrize("subtotal,esperado", [(150, 175), (250, 260), (300, 310), (300.01, 300.01)])
+    def test_total_inclui_frete_regional(subtotal, esperado):
+        # Arrange
+        destino = "Norte"
+        # Act
+>       resultado = calcular_total(subtotal, destino)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: calcular_total() takes 1 positional argument but 2 were given
+
+tests\test_frete_regional_tdd.py:34: TypeError
+_______________ test_total_inclui_frete_regional[300.01-300.01] _______________
+
+subtotal = 300.01, esperado = 300.01
+
+    @pytest.mark.parametrize("subtotal,esperado", [(150, 175), (250, 260), (300, 310), (300.01, 300.01)])
+    def test_total_inclui_frete_regional(subtotal, esperado):
+        # Arrange
+        destino = "Norte"
+        # Act
+>       resultado = calcular_total(subtotal, destino)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: calcular_total() takes 1 positional argument but 2 were given
+
+tests\test_frete_regional_tdd.py:34: TypeError
+=========================== short test summary info ===========================
+FAILED tests/test_frete_regional_tdd.py::test_adicional_regional_e_excecao[150-25-Norte]
+FAILED tests/test_frete_regional_tdd.py::test_adicional_regional_e_excecao[150-25-Nordeste]
+FAILED tests/test_frete_regional_tdd.py::test_adicional_regional_e_excecao[249.99-25-Norte]
+FAILED tests/test_frete_regional_tdd.py::test_adicional_regional_e_excecao[249.99-25-Nordeste]
+FAILED tests/test_frete_regional_tdd.py::test_adicional_regional_e_excecao[250-10-Norte]
+FAILED tests/test_frete_regional_tdd.py::test_adicional_regional_e_excecao[250-10-Nordeste]
+FAILED tests/test_frete_regional_tdd.py::test_adicional_regional_e_excecao[300-10-Norte]
+FAILED tests/test_frete_regional_tdd.py::test_adicional_regional_e_excecao[300-10-Nordeste]
+FAILED tests/test_frete_regional_tdd.py::test_adicional_regional_e_excecao[300.01-0-Norte]
+FAILED tests/test_frete_regional_tdd.py::test_adicional_regional_e_excecao[300.01-0-Nordeste]
+FAILED tests/test_frete_regional_tdd.py::test_outras_regioes_preservam_regra_base[249.99-15-Sul]
+FAILED tests/test_frete_regional_tdd.py::test_outras_regioes_preservam_regra_base[249.99-15-Sudeste]
+FAILED tests/test_frete_regional_tdd.py::test_outras_regioes_preservam_regra_base[249.99-15-Centro-Oeste]
+FAILED tests/test_frete_regional_tdd.py::test_outras_regioes_preservam_regra_base[250-0-Sul]
+FAILED tests/test_frete_regional_tdd.py::test_outras_regioes_preservam_regra_base[250-0-Sudeste]
+FAILED tests/test_frete_regional_tdd.py::test_outras_regioes_preservam_regra_base[250-0-Centro-Oeste]
+FAILED tests/test_frete_regional_tdd.py::test_outras_regioes_preservam_regra_base[300-0-Sul]
+FAILED tests/test_frete_regional_tdd.py::test_outras_regioes_preservam_regra_base[300-0-Sudeste]
+FAILED tests/test_frete_regional_tdd.py::test_outras_regioes_preservam_regra_base[300-0-Centro-Oeste]
+FAILED tests/test_frete_regional_tdd.py::test_total_inclui_frete_regional[150-175]
+FAILED tests/test_frete_regional_tdd.py::test_total_inclui_frete_regional[250-260]
+FAILED tests/test_frete_regional_tdd.py::test_total_inclui_frete_regional[300-310]
+FAILED tests/test_frete_regional_tdd.py::test_total_inclui_frete_regional[300.01-300.01]
+23 failed in 0.19s
